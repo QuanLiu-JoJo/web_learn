@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		h3{
+			font-weight:normal;
+		}
+		p{
+			font-size: 30px;
+		}
+		.para{
+			color:red;
+		}
+		p.para{
+			width: 200px;
+			height: 100px;
+			background-color: lightblue;
+		}
+		/*
+		必须是p标签
+		有.para类名
+		还必须有.fs类名
+		*/
+		/*p.para.fs{
+			color:#fff;
+		}*/
+		/*
+		必须是par类名
+		还必须有.fa类名
+
+		*/
+		.para.fs{
+			color:yellow;
+		}
+		/*
+			#para
+			id选择器是唯一的
+			
+		*/
+		p#para{
+
+		}
+
+
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="01.css">
+</head>
+<body>
+	<div class="box" id="box">
+		<p>我是一些段落</p>
+		<p class="para">我是一些段落</p>
+		<p class="para fs">我是一些段落2</p>
+		<p>我是一些段落</p>
+		<h3 class="para" id="para">我是h3</h3>
+		<h3>我是h3</h3>
+		<h3 class="para fs">我是h3</h3>
+		<h3>我是h3</h3>
+		<h3>我是h3</h3>
+		<h3>我是h3</h3>
+	</div>
+	
+</body>
+</html>

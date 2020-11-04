@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*清除默认样式*/
+		*{
+			padding:0;
+			margin:0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.big{
+			width: 300px;
+			height: 300px;
+			z-index: 4;
+			position: relative;
+		}
+		.big_son{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			position: absolute;
+			left:0px;
+			top:0px;
+			z-index: 4444;
+		}
+		.small{
+			width: 200px;
+			height: 200px;
+			position: relative;
+			z-index: 5;
+		}
+		.small_son{
+			width: 150px;
+			height: 150px;
+			background-color: pink;
+			position: absolute;
+			left:50px;
+			top:-150px;
+			z-index: 3333;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="big">
+		<p class="big_son">big_son</p>
+	</div>
+	<div class="small">
+		<p class="small_son">small_son</p>
+	</div>
+</body>
+</html>

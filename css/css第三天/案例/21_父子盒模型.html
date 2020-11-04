@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*清除默认样式*/
+		*{
+			padding:0;
+			margin:0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			color:#333;
+		}
+		.box{
+			width: 500px;
+			height:500px;
+			background-color: lightblue;
+			padding:50px;
+			border:1px solid #eee;
+		}
+		.son{
+			/*
+			父盒子的内容宽500，高500
+			儿子最大的实际占有宽500px
+			儿子最大的实际占有高500px
+
+			如果儿子有padding 或者border,需要进行内减。
+
+			*/
+			width:360px;
+			height:360px;
+			padding:50px;
+			border:20px solid red;
+			background-color: pink;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p class="son"></p>
+	</div>
+
+	
+
+</body>
+</html>

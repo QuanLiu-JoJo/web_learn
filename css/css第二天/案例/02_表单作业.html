@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*快速清除默认样式*/
+		*{
+			padding:0;
+			margin:0;
+		}
+		p{
+			height:40px;
+			line-height: 40px;
+			font-family: "Arial","Microsoft Yahei","SimSun";
+			font-size: 16px;
+			padding-left: 30px;
+		}
+		span{
+			color:red;
+		}
+		.small{
+			font-size: 14px;
+			color:#999999;
+		}
+		a{
+			text-decoration: none;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="01.css">
+</head>
+<body>
+	<form action="" method="get" style="width:500px;">
+		<p>
+			<span>*</span>手机号码
+			<input type="text" />
+			<b>@163.com</b>
+		</p>
+		<p class="small">
+			请填写手机号码
+		</p>
+		<p>
+			<span>*</span>图片验证码
+			<input type="text" />
+			<img src="images/yzm.png" alt="" height="30px" />
+		</p>
+		<p class="small">
+			填写图片中的字符，不区分大小写
+			<a href="ff">看不清楚？换张图片</a>
+		</p>
+		<p>
+			<input type="button" value="免费获取验证码" />
+		</p>
+		<p>
+			<span>*</span>短信验证码
+			<input type="text" />
+		</p>
+		<p class="small">
+			请查收手机短信,并填写短信中的验证码
+		</p>
+		<p>
+			<span>*</span>密码
+			<input type="password" />
+		</p>
+		<p class="small">
+			6-16个字符，区分大小写
+		</p>
+		<p>
+			<span>*</span>确认密码
+			<input type="password" />
+		</p>
+		<p class="small">
+			请再次填写密码
+		</p>
+		<p class="small">
+			<input type="checkbox" checked="checked" id="agree" />
+			<label for="agree">同意<a href="ff">服务条款</a></label>
+		</p>
+		<p>
+			<input type="submit" value="立即注册" />
+		</p>
+
+	</form>
+</body>
+</html>

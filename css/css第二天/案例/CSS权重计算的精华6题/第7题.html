@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box1 div.box2 .box3{
+			color:yellow;
+		}
+		.box1 #box2 .box3{
+			color:orange;
+		}
+		/*
+		文字显示什么颜色？
+		第一步：先看元素有没有被选中，没有被选中，看继承性（就近原则html）
+		第二步：距离相同看权重
+		(1,2,1)   权重大，最终显示黄色。
+		(1,2,0)
+
+
+		*/
+
+		
+		
+	</style>
+</head>
+<body>
+	<div class="box1" id="box1">
+		<div class="box2" id="box2">
+			<div class="box3" id="box3">
+				<div class="box4" id="box4">文字</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

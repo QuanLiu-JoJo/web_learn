@@ -1,0 +1,131 @@
+/*公共类*/
+a{
+	text-decoration: none;
+	color:#818496;
+}
+.inner{
+	width: 1000px;
+	margin:0 auto;
+}
+.top{
+	position: fixed;
+	width: 68px;
+	height: 29px;
+	right:10px;
+	bottom: 74px;
+}
+.top a{
+	display: block;
+	height:29px;
+	background:url(../images/top.png) no-repeat 0 -40px; 
+}
+.top a:hover{
+	background-position: 0 0;
+}
+
+/*header开始*/
+.header{
+	height:58px;
+	background-color: #191D3A;
+}
+.header .logo{
+	float: left;
+	width: 205px;
+	height: 48px;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.header .logo a{
+	display: block;
+	width: 157px;
+	height: 35px;
+	background: url(../images/logo.png) no-repeat;
+	text-indent: -999em;
+	overflow: hidden;
+}
+.header .nav{
+	float: left;
+	width: 626px;
+	overflow: hidden;
+}
+.header .nav ul li{
+	float: left;
+	width: 85px;
+	border-left:1px solid #252947;
+	height:58px;
+	line-height: 58px;
+}
+.header .nav ul li a{
+	display: block;
+	font-size: 12px;
+	text-align: center;
+}
+.header .nav ul li.cur a{
+	color:#E2E4ED;
+	background-color: #252947;
+}
+.header .nav ul li a:hover{
+	color:#E2E4ED;
+}
+.header .nav ul li.join{
+	width: 100px;
+	height:46px;
+	padding-left: 9px;
+	padding-top: 12px;
+	line-height: 32px;
+}
+.header .nav ul li.join a{
+	width: 98px;
+	height: 32px;
+	border: 1px solid #3ACA7A;
+	border-radius:3px;
+	background-color: #38B774;
+	color:#fff;
+}
+.header .lang{
+	float: right;
+	height:58px;
+	line-height: 58px;
+}
+.header .lang a{
+	color:#444866;
+	font-size: 12px;
+}
+.header .lang a.on,
+.header .lang a:hover
+{
+	color:#38B774;
+}
+.header .lang a.cn{
+	margin-right: 14px;
+}
+/*footer*/
+.footer{
+	width: 100%;
+	background: #191D3A;
+	height: 123px;
+	padding-top: 20px;
+}
+.footer .inner p{
+	font-size: 12px;
+	line-height: 52px;
+	color:#6C6E7E;
+	overflow: hidden;
+}
+.footer .inner p span{
+	float: left;
+	width: 825px;
+	height:52px;
+}
+.footer .inner p .img{
+	float: left;
+	width: 49px;
+	height:52px;
+}
+.footer .inner p .img img{
+	width:49px;
+	vertical-align: center;
+}
+.footer .inner p a.web{
+	margin:0 4px;
+}

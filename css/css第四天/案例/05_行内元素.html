@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*清除默认样式*/
+		*{
+			padding:0;
+			margin:0;
+		}
+		span{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+		}
+		.teshu{
+			width: 300px;
+			height: 300px;
+			background-color: pink;
+			/*转换为块级元素*/
+			display: block;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			background-color: green;
+			/*转换为行内元素*/
+			display: inline;
+		}
+		.box2{
+			display: inline-block;
+			width: 300px;
+			height: 300px;
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<span>我是行内元素我是行内元素我是行内元素我是行内元素</span>
+	<span class="teshu">2</span>
+	<div class="box">我是div</div>
+	<div class="box2">inline-block</div>
+</body>
+</html>

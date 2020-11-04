@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*
+		（0,2,1）
+		*/
+		div .box2 .box3{
+			color:red;
+		} 
+
+
+		/*
+		（0,3,0）
+
+		*/
+		.box1 .box2 .box3{
+			color:blue;
+		}
+
+		/*
+		(1,2,0) 
+
+		三个选择器都同时选中了box3，看权重
+		由于最后id选择器是1  其他都是0，1 > 0
+		最后选择器权重最大，颜色最终显示橘色。
+		*/
+		#box1 .box2 .box3{
+			color:orange;
+		}
+
+
+		
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="01.css">
+</head>
+<body>
+	<div class="box1" id="box1">
+		<div class="box2" id="box2">
+			<div class="box3" ="box3">文字</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			color:red;
+		}
+		#box1{
+			color:blue;
+		}
+		.box1 .box2 .box3{
+			color:pink;
+		}
+		/*
+			元素没有被选中，看距离远近,如果距离相同，看选择器权重,如果权重相同，看css书写越靠后显示最终颜色
+			(0,3,0)
+			(1,2,0)
+			（1,2,0）
+
+
+		*/
+		.box1 #box2 .box3{
+			color:orange;
+		}
+		#box1 .box2 .box3{
+			color:yellow;
+		}
+
+
+		
+
+
+		
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="01.css">
+</head>
+<body>
+	<div class="box1" id="box1">
+		<div class="box2" id="box2">
+			<div class="box3" ="box3">
+				<div class="box4" id="box4">文字</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

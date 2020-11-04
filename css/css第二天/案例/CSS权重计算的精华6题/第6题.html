@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		#box1 #box2{
+			color:red;
+		}
+		div{
+			color:blue;
+		}
+		/*
+			元素p没有被选中，看继承性（就近原则html结构）
+			div标签选择器会选中所有同种标签，距离p更近
+			蓝色
+
+		*/
+	</style>
+</head>
+<body>
+	<div id="box1" class="div1">
+		<div id="box2" class="div2">
+			<div id="box3" class="div3">
+				<p>我是段落</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

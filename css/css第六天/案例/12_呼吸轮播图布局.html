@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*清除默认样式*/
+		*{
+			padding:0;
+			margin:0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		.box{
+			width: 880px;
+			height: 550px;
+			border: 1px solid #000;
+			margin:50px auto;
+			position: relative;
+		}
+		.box ul li{
+			/*所有图片罗一起*/
+			position: absolute;
+			left:0px;
+			top:0px;
+			/*将所有图片消失*/
+			display: none;
+		}
+		.box ul li.cur{
+			display: block;
+		}
+		.box .btns a{
+			position: absolute;
+			width: 30px;
+			height: 60px;
+			top:50%;
+			margin-top: -30px;
+			text-align: center;
+			line-height: 60px;
+			color:#fff;
+			font-size: 35px;
+			font-weight: bold;
+			font-family: "Consolas";
+			background-color: rgba(0,0,0,.5);
+		}
+		.box .btns a.leftBtn{
+			left:10px;
+		}
+		.box .btns a.rightBtn{
+			right:10px;
+		}
+		.box .circles{
+			position: absolute;
+			width: 110px;
+			height: 20px;
+			left:50%;
+			margin-left: -55px;
+			bottom:30px;
+			overflow: hidden;
+		}
+		.box .circles ol{
+			width:120px;
+		}
+		.box .circles ol li{
+			float: left;
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+			background-color: #eee;
+			border-radius: 50%;
+		}
+		.box .circles ol li.cur{
+			background-color: orange;
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="imgs">
+			<ul>
+				<li class="cur"><a href=""><img src="images/c1.jpg" alt="" /></a></li>
+				<li><a href=""><img src="images/c2.jpg" alt="" /></a></li>
+				<li><a href=""><img src="images/c3.jpg" alt="" /></a></li>
+				<li><a href=""><img src="images/c4.jpg" alt="" /></a></li>
+			</ul>
+		</div>
+		<div class="btns">
+			<a href="javascript:void(0);" class="leftBtn">&lt;</a>
+			<a href="javascript:void(0);" class="rightBtn">&gt;</a>
+		</div>
+		<div class="circles">
+			<ol>
+				<li class="cur"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+	</div>
+</body>
+</html>

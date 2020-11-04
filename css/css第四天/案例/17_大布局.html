@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/*清除默认样式*/
+		*{
+			padding:0;
+			margin:0;
+		}
+		/*公共类*/
+		.inner{
+			width: 970px;
+			margin:0 auto;
+		}
+		.mgb10{
+			margin-bottom: 10px;
+		}
+		.header{
+			overflow: hidden;
+		}
+		.header .logo{
+			float: left;
+			width: 277px;
+			height: 103px;
+			background-color: red;
+		}
+		.header .lang{
+			float: right;
+			width: 137px;
+			height: 49px;
+			background-color: green;
+		}
+		.header .nav{
+			float: right;
+			width: 679px;
+			height: 46px;
+			background-color: green;
+			margin-top: 8px;
+		}
+		.content{
+			overflow: hidden;
+		}
+		.content .slide{
+			float: left;
+			width: 310px;
+			height: 435px;
+			background-color: lightblue;
+		}
+		.content .main{
+			float: right;
+			width: 650px;
+			height: 435px;
+		}
+		.content .main .top{
+			/*width:650px;*/
+			/*height:400px;*/
+			overflow: hidden;
+		}
+		.content .main .top .fl{
+			float: left;
+			width: 450px;
+			height: 400px;
+		}
+		.content .main .top .fl p{
+			/*width: 450px;*/
+			height:240px;
+			background-color: lightblue;
+		}
+		.content .main .top .fl p.no2{
+			height: 110px;
+		}
+		..content .main .top .fl p.no3{
+			height: 30px;
+		}
+		.content .main .top .fr{
+			float: right;
+			width: 190px;
+			height: 400px;
+			background-color: purple;
+		}
+		.content .main .bottom{
+			/*width:650px;*/
+			height:25px;
+			background-color: green;
+		}
+		.footer{
+			height:35px;
+			background-color: blue;
+		}
+
+
+		
+
+		
+
+	</style>
+</head>
+<body>
+	<!-- header开始 -->
+	<div class="header inner mgb10">
+		<div class="logo">logo</div>
+		<div class="lang">lang</div>
+		<div class="nav">nav</div>
+	</div>
+	<!-- content部分 -->
+	<div class="content inner mgb10">
+		<div class="slide"></div>
+		<div class="main">
+			<div class="top mgb10">
+				<div class="fl">
+					<p class="no1 mgb10"></p>
+					<p class="no2 mgb10"></p>
+					<p class="no3"></p>
+				</div>
+				<div class="fr"></div>
+			</div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+	<!-- footer部分 -->
+	<div class="footer inner"></div>
+</body>
+</html>
